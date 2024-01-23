@@ -1,0 +1,20 @@
+
+.topImg {
+    width: 10%;
+    position: fixed;
+  }
+  .bottomImage {
+    width: 15%;
+    bottom: 10%;
+    right: 30px;
+    position: fixed;
+  }
+  .fixed .button{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  .fixed .btn{
+
+  }
