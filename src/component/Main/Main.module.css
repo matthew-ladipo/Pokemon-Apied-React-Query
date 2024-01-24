@@ -6,6 +6,8 @@
 }
 .middle img {
   width: 13.5rem;
+  margin-top: 10px;
+  position: absolute;
 }
 .button {
   justify-content: space-between;
@@ -17,28 +19,60 @@
   padding: 5px 14px;
   border-radius: 5px;
   border: 3px solid black;
+  cursor: pointer;
+}
+.button button :active{
+  transform: translateY(-1px);
 }
 .next {
   position: fixed;
-  left: 90%;
+
+  left: 92%;
   cursor: pointer;
 }
 .prev {
   position: fixed;
-  left: 50px;
+  left: 20px;
+  
   cursor: pointer;
 }
 
 .pre {
-  margin-bottom: 20px;
-  display: grid;
-  /* justify-content: center;
+  justify-content: center;
   align-items: center;
-  position: relative; */
+  position: relative;
 }
 .repeat {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 0.5fr));
   grid-gap: 2rem;
-  margin: 0 92px;
+  margin: 80px 90px;
+}
+@media screen and (max-width: 1220px){
+  .repeat{
+    grid-template-columns: repeat(auto-fit,minmax(450px, 0.5fr));
+  }
+}
+@media screen and (max-width: 1118px){
+  .repeat{
+    grid-template-columns: repeat(auto-fit,minmax(350px, 0.5fr));
+  }
+}
+@media screen and (max-width: 918px){
+  .repeat{
+    grid-template-columns: repeat(auto-fit,minmax(250px, 0.5fr));
+  }
+  .next{
+    left: 90%;
+  }
+}
+@media screen and (max-width: 710px){
+  .repeat{
+    /* grid-template-columns: repeat(auto-fit,minmax(240px, 0.5fr)); */
+   margin: 80px 140px;
+  }
+  .pre{
+    display: grid;
+  }
 }

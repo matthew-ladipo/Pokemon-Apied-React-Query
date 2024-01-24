@@ -40,16 +40,16 @@ const Details = () => {
             <section>
               <div className={details.buttoncontainer}>
                 <div className={details.button}>
-                  <Link to="about">
+                  <Link to="about" className={details.link}>
                     <p>About</p>
                   </Link>
-                  <Link to="stats">
+                  <Link to="stats" className={details.link}>
                     <p>Stats</p>
                   </Link>
-                  <Link to="move">
+                  <Link to="move" className={details.link}>
                     <p>Moves</p>
                   </Link>
-                  <Link to="evolution">
+                  <Link to="evolution" className={details.link}>
                     <p>Evolution</p>
                   </Link>
                 </div>
